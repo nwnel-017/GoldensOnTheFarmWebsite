@@ -1,0 +1,19 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+/* The CSS justify-content property defines how the browser distributes 
+space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */
+/* list style type none-> removes dots from list items  */
+/* margin and padding set to 0-> removes whitespace around tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

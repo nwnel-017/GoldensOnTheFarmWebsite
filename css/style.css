@@ -6,6 +6,20 @@
     display: block;
 }
 
+#home, .active[data-tab-content] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    /* min-height: 100%; */
+    width: 100%;
+}
+
+#home[data-tab-content] {
+    display: none;
+}
+
 /* The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */
 /* list style type none-> removes dots from list items  */
@@ -13,7 +27,13 @@ space between and around content items along the main-axis of a flex container, 
 .tabs {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    height: 8vh;
+    background-color: rgb(118, 173, 118);
 }
+
+
+

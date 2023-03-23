@@ -1,7 +1,6 @@
 /* html * {
     font: Ariel;
 } */
-
 body {
     font-family: 'Shantell Sans', cursive;
 }
@@ -10,11 +9,28 @@ body {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: black
+}
+
+a:active {
+    background-color: rgb(176, 232, 176);
+}
+
 .active[data-tab-content] {
     display: block;
 }
 
-#home.active[data-tab-content] {
+/* #home.active[data-tab-content] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+} */
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +39,71 @@ body {
     width: 100%;
 }
 
-.active[data-tab-target] {
-    background-color: rgb(229, 237, 229);;
+/* #contact.active[data-tab-content] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+} */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-#our-story.active[data-tab-content] {
+#past-litters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* #meet-the-pack.active[data-tab-content] {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; 
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+} */
+
+#meet-the-pack {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* #our-story.active[data-tab-content] {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content: center; 
     width: 100%;
     height: 100%;
+    /* margin-top: 15vh; 
+} */
+
+#our-story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* align-content: center; */
+    width: 100%;
+    height: 100%;
+    /* margin-top: 15vh; */
 }
+
 
 #bio {
     margin-bottom: 4px;
@@ -41,7 +114,7 @@ body {
     justify-content: space-between;
     /* justify-content: space-around; */
     /* align-items: center; */
-    /* margin-top: 30px; */
+    /* margin-top: 15vh; */
 }
 
 .text-right {
@@ -100,12 +173,20 @@ space between and around content items along the main-axis of a flex container, 
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0px;
     list-style-type: none;
     margin: 0;
     padding: 0;
     height: 8vh;
     background-color: rgb(118, 173, 118);
+    text-decoration: none;
 }
+
+.active-tab {
+    background: rgb(176, 232, 176);
+}
+
 
 
 

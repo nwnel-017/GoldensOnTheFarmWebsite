@@ -11,22 +11,19 @@
     <body>
 
         <ul class="tabs">
-            <!-- data-tab-target-> selector -->
-            <li data-tab-target="#home">Home</li>    
-            <li data-tab-target="#our-story">Our Story</li>   
-            <li data-tab-target="#meet-the-pack">Meet the pack</li> 
-            <li data-tab-target="#past-litters">Past litters</li>   
-            <li data-tab-target="#contact">Contact Us</li>        
+            <a href="#home" class="active-tab">Home</a>   
+            <a href="#our-story">Our Story</a>   
+            <a href="#meet-the-pack">Meet the pack</a> 
+            <a href="#past-litters">Past litters</a>   
+            <a href="#contact">Contact Us</a>        
         </ul>
 
         <div class="tab-content">
-            <div id="home" data-tab-content class="active"> 
-                <!-- data-tab-content: data attribute -->
+            <div id="home"  class="active"> 
                 <h1>Goldens On The Farm</h1>
                 <h3>Lovingly breeding goldens since 2010</h3>
             </div>
-            <div id="our-story" data-tab-content>
-                <h1>Our Story</h1>
+            <div id="our-story">
                 <div id="content">
                     <div class="family-pic">Family picture</div>
                     <div class="text-right">
@@ -38,8 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div id="meet-the-pack" data-tab-content>
-                <h1>Meet the pack</h1>
+            <div id="meet-the-pack">
                 <div id="content">
                     <div class="dog-pic-container">
                         <div class="dog-pic">Puppy picture</div>
@@ -57,14 +53,12 @@
                     </div>
                 </div>
             </div>
-            <div id="past-litters" data-tab-content>
-                <h1>Past litters</h1>
+            <div id="past-litters">
                 <p>These are our past litters</p>
             </div>
-            <div id="contact" data-tab-content>
-                <h1>Contact Us</h1>
-                <p>Email us at stewarts@example.com</p>
-                <p>Or text us at 509-111-2222</p>
+            <div id="contact">
+                <h1>Email us at stewarts@example.com</h1>
+                <h1>Or text us at 509-111-2222</h1>
             </div>
         </div>
     </body>

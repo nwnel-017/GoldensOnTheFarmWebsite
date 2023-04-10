@@ -1,6 +1,7 @@
-/* html * {
-    font: Ariel;
-} */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Shantell Sans', cursive;
 }
@@ -14,7 +15,11 @@ a {
     color: black
 }
 
-a:active {
+/* a:active {
+    background-color: rgb(176, 232, 176);
+} */
+
+a:visited {
     background-color: rgb(176, 232, 176);
 }
 

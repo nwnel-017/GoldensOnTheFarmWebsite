@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Shantell Sans', cursive;
+    font: Arial, Helvetica, sans-serif;
 }
 
 [data-tab-content] {
@@ -35,6 +35,11 @@ a:visited {
     height: 100%;
     width: 100%;
 } */
+
+#logo {
+    width: 50%;
+}
+
 #home {
     display: flex;
     justify-content: center;

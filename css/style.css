@@ -4,7 +4,7 @@ html {
 
 @font-face {
     font-family: myFont;
-    src:url(forest_gallery.otf);
+    src:url(bebas.otf);
 }
 
 body {
@@ -54,10 +54,6 @@ a:visited {
     width: 100%;
 } */
 
-#logo {
-    width: 50%;
-}
-
 #home {
     display: flex;
     justify-content: center;
@@ -73,6 +69,18 @@ a:visited {
     width: 100%;
 }
 
+.logo {
+    /* no grey background, but image is not centered */
+    width: 70%;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    /* width: auto;
+    height: auto;
+    text-align: center; >>>>this works, but there is a grey background around image*/
+}
+
 .homescreen {
     display: flex; 
     width: 100%;
@@ -83,6 +91,29 @@ a:visited {
     align-items: center;
     /* margin-left: 5vh; */
     /* margin-top: 3vh; */
+}
+
+.background-vid {
+    /* width: 100%;
+    height: 100%; */
+    position: absolute;
+    right: 0;
+    left: 0; 
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-vid {
+        width: auto;
+        height: 100%;
+    }
 }
 
 /* #contact.active[data-tab-content] {

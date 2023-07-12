@@ -70,15 +70,13 @@ a:visited {
 }
 
 .logo {
-    /* no grey background, but image is not centered */
-    width: 70%;
+    width: 90%;
     position: absolute;
-    right: 0;
     left: 0;
-
-    /* width: auto;
-    height: auto;
-    text-align: center; >>>>this works, but there is a grey background around image*/
+    right: 0;
+    margin: 0 auto;
+    margin-top: 0 auto;
+    /* filter: brightness(0) invert(); */
 }
 
 .homescreen {
@@ -94,11 +92,12 @@ a:visited {
 }
 
 .background-vid {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     position: absolute;
     right: 0;
     left: 0; 
+    top: 0;
     z-index: -1;
 }
 

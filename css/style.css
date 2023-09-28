@@ -144,15 +144,15 @@ a:visited {
 }
 
 #past-litters {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 40px;
     /* border: 2px solid black; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* margin-top: 8vh;  */
     height: 100%;
-    width: 100%;
+    width: 100%; 
 }
 
 /* #meet-the-pack.active[data-tab-content] {
@@ -325,16 +325,64 @@ a:visited {
     /* margin-top: 3vh; */
 }
 
+.past-litters-right-pic {
+    display: flex;
+    width: 80vh;
+    height: 50vh;
+    background-color: rgb(128, 133, 138);
+
+    color: white;
+    justify-content: center;
+    /* margin-left: 5vh; */
+    object-fit: cover;
+    /* margin-top: 3vh; */
+}
+
+.past-litters-left-pic {
+    float: left;
+    height: 100%;
+    /* height: 50vh; */
+}
+
+#past-litters-top {
+
+}
+
+#past-litters-bottom {
+
+}
+
 .past-litters-container {
     top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid blue; */
-    width: 90%;
-    height: 45%;
+    width: 100%;
+    height: 100%;
     /* margin-top: 20px; */
     /* padding-top: 20px; */
+}
+
+.past-litters-container > div {
+    flex: 1;
+}
+
+/* .left-half {
+    height: 100%;
+    width: 50%;
+} */
+
+.stacked-pics {
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.stacked-pics > div {
+    flex: 1;
 }
 
 .past-litters-text {
@@ -349,6 +397,7 @@ a:visited {
 
 .left-pic {
     float: left;
+    /* width: 50vh; */
 }
 
 .right-pic {
@@ -356,8 +405,10 @@ a:visited {
 }
 
 .litter-pic {
-    width: 70vh;
-    height: 40vh;
+    /* width: 70vh;
+    height: 40vh; */
+    height: 100%;
+    width: 120%;
 }
 /* The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */

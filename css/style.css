@@ -327,7 +327,8 @@ a:visited {
 
 .past-litters-right-pic {
     display: flex;
-    width: 80vh;
+    /* width: 80vh; */
+    width: 100%;
     height: 50vh;
     background-color: rgb(128, 133, 138);
 
@@ -344,13 +345,13 @@ a:visited {
     /* height: 50vh; */
 }
 
-#past-litters-top {
-
+/* .past-litters-top {
+    width: 100%;
 }
 
-#past-litters-bottom {
-
-}
+.past-litters-bottom {
+    width: 100%;
+} */
 
 .past-litters-container {
     top: 50px;
@@ -386,13 +387,11 @@ a:visited {
 }
 
 .past-litters-text {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0px;
-    /* border: 3px solid orange; */
-    /* justify-content: center; */
-    align-items: center;
-    width: 40%;
+    color: white;
+    /* position: absolute; */
+    top: 50%;
+    /* z-index: 3; */
+    /* overflow: hidden; */
 }
 
 .left-pic {
@@ -409,6 +408,18 @@ a:visited {
     height: 40vh; */
     height: 100%;
     width: 120%;
+    object-fit: cover;
+    /* object-position: 50%; */
+    border: 5px solid white;
+    /* position: relative; */
+}
+
+#puppy-in-hands {
+    object-position: 50% 25%;
+}
+
+#sleepy-puppy {
+    object-position: 50% 60%;
 }
 /* The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */

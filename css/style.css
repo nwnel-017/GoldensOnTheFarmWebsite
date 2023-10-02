@@ -329,7 +329,8 @@ a:visited {
     display: flex;
     /* width: 80vh; */
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
+    height: 50%;
     background-color: rgb(128, 133, 138);
 
     color: white;
@@ -354,13 +355,17 @@ a:visited {
 } */
 
 .past-litters-container {
-    top: 50px;
+    top: 60px;
+    /* top: 0px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     /* border: 2px solid blue; */
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    height: 91vh;
+    max-height: 100%;
     /* margin-top: 20px; */
     /* padding-top: 20px; */
 }
@@ -378,6 +383,7 @@ a:visited {
     display: flex; 
     flex-direction: column;
     height: 100%;
+    max-height: 100%;
     width: 100%;
     justify-content: space-around;
 }
@@ -388,8 +394,11 @@ a:visited {
 
 .past-litters-text {
     color: white;
-    /* position: absolute; */
-    top: 50%;
+    position: absolute;
+    /* top: 50%; */
+    bottom: 0px;
+    margin-left: 10px;
+    font-size: 40px;
     /* z-index: 3; */
     /* overflow: hidden; */
 }
@@ -431,6 +440,7 @@ space between and around content items along the main-axis of a flex container, 
     justify-content: space-around;
     align-items: center;
     position: sticky;
+    z-index: 1;
     top: 0px;
     list-style-type: none;
     margin: 0;

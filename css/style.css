@@ -430,6 +430,24 @@ a:visited {
 #sleepy-puppy {
     object-position: 50% 60%;
 }
+
+#three-pups {
+    object-position: 70% 50%;
+}
+
+#mom-and-pup {
+    object-position: 50% 60%;
+}
+
+#two-pups-grass {
+    object-position: 50% 40%;
+}
+
+#puppy-with-horse {
+    object-position: 50% 80%; 
+    /* figure out how to zoom pic in */
+}
+
 /* The CSS justify-content property defines how the browser distributes 
 space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */
 /* list style type none-> removes dots from list items  */

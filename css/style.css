@@ -143,37 +143,9 @@ a:visited {
     width: 100%;
 }
 
-#past-litters {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    /* border: 2px solid black; */
-    /* flex-direction: column; */
-    /* margin-top: 8vh;  */
+/* #past-litters {
     height: 100%;
     width: 100%; 
-}
-
-/* #meet-the-pack.active[data-tab-content] {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; 
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-} */
-
-/* #meet-the-pack {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    border: 2px solid blue; 
-    height: 100%;
 } */
 
 .meet-the-pack {
@@ -225,7 +197,7 @@ a:visited {
     justify-content: space-around;
     align-items: center;
     /* margin-top: 15vh; */
-    /* border: 2px solid rgb(191, 27, 65); */
+    /* border: 20px solid rgb(191, 27, 65); */
 }
 
 .pack-content {
@@ -366,12 +338,17 @@ a:visited {
     /* height: 100%; */
     height: 91vh;
     max-height: 100%;
+    /* border: 5px solid blue; */
     /* margin-top: 20px; */
     /* padding-top: 20px; */
 }
 
 .past-litters-container > div {
     flex: 1;
+}
+
+.full-screen {
+    height: 100%;
 }
 
 /* .left-half {
@@ -432,7 +409,7 @@ a:visited {
 }
 
 #three-pups {
-    object-position: 70% 50%;
+    object-position: 70% 60%;
 }
 
 #mom-and-pup {
@@ -444,8 +421,12 @@ a:visited {
 }
 
 #puppy-with-horse {
-    object-position: 50% 80%; 
+    object-position: 170% 50%; 
     /* figure out how to zoom pic in */
+}
+
+#meg-and-pup {
+    object-position: 50% 30%;
 }
 
 /* The CSS justify-content property defines how the browser distributes 
@@ -463,11 +444,13 @@ space between and around content items along the main-axis of a flex container, 
     list-style-type: none;
     margin: 0;
     padding: 0;
+    /* margin-left: 0; */
     /* height: 8vh; */
     height: 60px;
     background-color: rgb(118, 173, 118);
     text-decoration: none;
-    /* border: 5px white; */
+    /* width: 100%; */
+    /* border: 5px solid blue; */
 }
 
 .active-tab {

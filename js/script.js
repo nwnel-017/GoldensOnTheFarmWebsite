@@ -15,6 +15,7 @@ const sections = document.querySelectorAll('section[id]')
 //in meet the pack section 
 window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
+    console.log(scrollY);
     sections.forEach((current) => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 200;

@@ -1,5 +1,10 @@
 html {
     scroll-behavior: smooth;
+    /* overscroll-behavior-y: none; */
+    /* overflow: hidden; */
+    /* height: 100%; */
+    /* width: 100%; */
+
 }
 
 @font-face {
@@ -20,6 +25,14 @@ body {
     /* font: 'myFont';
     /* font-family: myFont; */
     background-color: rgb(201, 197, 197);
+    width: 100%;
+    /* padding-left: 0px; */
+    margin-left: 0px;
+    margin-top: 0px;
+    /* padding-top: 0; */
+    /* padding-left: 0; */
+    /* height: 100%; */
+    /* overflow: hidden; */
 }
 
 [data-tab-content] {
@@ -104,9 +117,11 @@ a:visited {
     width: 100%;
     height: 100%;
     position: absolute;
+    /* overflow: hidden; */
     right: 0;
     left: 0; 
     top: 0;
+    padding-left: 0;
     z-index: -1;
     /* border: 5px white; */
 }

@@ -153,7 +153,9 @@ a:visited {
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    flex-direction: column;
+    /* align-self: center; */
+    /* padding-left: 30px;                  this fixes alignment, but adds extra whitespace*/
+    /* flex-direction: column; */
     height: 100%;
     width: 100%;
 }
@@ -234,11 +236,12 @@ a:visited {
     flex-direction: column;
     justify-content: center;
     float: right;
-    height: 70%;
-    font-size: 20px;
+    height: 100%;
+    width: 50%;
+    font-size: 25px;
     margin-right: 40px;
     margin-left: 20px;
-    /* border: 2px solid pink; */
+    /* border: 5px solid blue; */
 }
 
 .text-middle {
@@ -263,17 +266,27 @@ a:visited {
     display: table-cell;
     vertical-align: middle;
     text-align: justify;
+    /* border: 5px solid blueviolet; */
+    width: 90%;
+    height: 70%;
+    line-height: 45px;
+    align-self: center;
 }
 
 .family-pic {
-    display: flex; 
-    width: 70vh;
-    height: 50vh;
+    /* display: flex;  */
+    /* width: 70vh;
+    height: 50vh; */
+    width: 50%;
+    /* width: 100%; */
+    height: 70%;
+    /* object-fit: cover; */
     background-color: rgb(128, 133, 138);
     color: white;
     justify-content: center;
     align-items: center;
     float: left;
+    /* border: 5px solid green; */
     /* margin-left: 5vh; */
     /* margin-top: 3vh; */
 }
@@ -281,6 +294,7 @@ a:visited {
 #family-pic {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 #mandi-puppy {
@@ -310,6 +324,14 @@ a:visited {
     /* margin-left: 5vh; */
     object-fit: cover;
     /* margin-top: 3vh; */
+}
+
+.retired-dog {
+    display: flex;
+    background-color: rgb(128, 133, 138);
+    height: 35vh;
+    width: 35vh;
+    object-fit: cover;
 }
 
 .past-litters-right-pic {
@@ -345,7 +367,8 @@ a:visited {
     top: 60px;
     /* top: 0px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
     position: relative;
     /* border: 2px solid blue; */
@@ -358,12 +381,113 @@ a:visited {
     /* padding-top: 20px; */
 }
 
+.container {
+    top: 60px;
+    /* top: 0px; */
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+    /* border: 2px solid blue; */
+    width: 100%;
+    max-width: 100%;
+    margin-left: 50px;
+    /* height: 100%; */
+    height: 91vh;
+    max-height: 100%;
+    /* border: 5px solid blue; */
+    /* margin-top: 20px; */
+    /* padding-top: 20px; */
+}
+
+.retired-dogs {
+    /* top: 60px; */
+    /* margin-top: 65px; */
+    padding-top: 45px;
+    width: 100%;
+    height: 91vh;
+    max-height: 100%;
+}
+
+.contact-page-container {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    /* padding-left: 20px; */
+    /* flex-direction: column; */
+    /* align-self: center; */
+    align-items: center;
+    height: 100%;
+}
+
+
+.middle-align {
+    float: center;
+}
+
+.contact-page {
+    top: 60px;
+    /* top: 0px; */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    position: relative;
+    /* border: 2px solid blue; */
+    width: 100%;
+    /* height: 100%; */
+    height: 91vh;
+    max-height: 100%;
+    /* border: 5px solid blue; */
+    /* margin-top: 20px; */
+    /* padding-top: 20px; */
+}
+
+.contact-text {
+    font-size: 20px;
+}
+
+/* .contact-page-container {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    /* padding-left: 20px; */
+    /* flex-direction: column; */
+    /* align-self: center; 
+    align-items: center;
+    height: 100%;
+} */
+
+/* .contact-page-container > div {
+    flex: 1;
+} */
+
 .past-litters-container > div {
     flex: 1;
 }
 
 .full-screen {
     height: 100%;
+}
+
+.retired-dogs-container {
+    display: flex;
+    justify-content: space-around;
+    /* height: 80%; */
+    width:50%;
+    margin: auto;
+}
+
+.retired-dogs-wrapper {
+    height: 70%;
+}
+
+.picture-row {
+    /* height: 100%; */
+    /* border: 5px solid red; */
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 /* .left-half {
@@ -387,12 +511,21 @@ a:visited {
 .past-litters-text {
     color: white;
     position: absolute;
+    /* position: relative; */
     /* top: 50%; */
     bottom: 0px;
     margin-left: 10px;
     font-size: 40px;
     /* z-index: 3; */
     /* overflow: hidden; */
+}
+
+.retired-dogs-text {
+    color: white;
+    position: relative;
+    bottom: 0px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 .left-pic {
@@ -442,6 +575,28 @@ a:visited {
 
 #meg-and-pup {
     object-position: 50% 30%;
+}
+
+#banja {
+    /* height: 35vh;
+    width: 35vh; */
+}
+
+#levi {
+    object-position: 50% 20%;
+    /* height: 35vh;
+    width: 35vh; */
+}
+
+#mandi {
+    /* height: 35vh;
+    width: 35vh; */
+}
+
+#uke {
+    object-position: 50% 90%;
+    /* height: 35vh;
+    width: 35vh; */
 }
 
 /* The CSS justify-content property defines how the browser distributes 

@@ -3,6 +3,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
     <script src="js/script.js" defer></script>
     <!-- defer: specifies that script is executed after page has finished parsing  --> 
@@ -16,7 +18,6 @@
     <body>
         <ul class="tabs" id="tabs">
             <a href="#home" class="active-tab">Home</a>   
-            <!-- <a href="#our-story">Our Story</a>    -->
             <a href="#meet-the-pack">Meet the pack</a> 
             <a href="#retired-dogs">Retired Dogs</a> 
             <a href="#past-litters">Past litters</a>   
@@ -27,57 +28,19 @@
             <section id="home"  class="active"> 
                 <div class="content">
                     <div class="homescreen">
-                        <video autoplay loop muted plays-inline class="background-vid">
+                        <!-- <video autoplay loop muted plays-inline class="background-vid">
                             <source src="homescreen/Goldens_On_The_Farm.mp4" type="video/mp4">
+                        </video> -->
+                        <!-- <iframe src="https://www.youtube.com/embed/y33yZCPCE8o?modestbranding=1&showinfo=0&fs=0&autoplay=1&mute=1&loop=1&controls=0&disablekb=1&playlist=y33yZCPCE8o" 
+                        width="560" height="315" title="Goldens On The Farm" frameborder="0" allowfullscreen></iframe> -->
+                        <video autoplay loop muted plays-inline class="background-vid" controls>
+                            <source src="https://www.dropbox.com/scl/fi/zm0a2kupu3p70gs4y7wzq/Goldens_On_The_Farm.mp4?rlkey=9blwulai5ltoy0mcl5egimiz4&raw=1" type="video/mp4">
                         </video>
                         <img class="logo" src="homescreen/logo.png">
                     </div>
                 </div>
             </section>
-            <!-- <section id="our-story">
-                <div class="content">
-                    <div class="family-pic">
-                        <img id="family-pic" src="family-pic/family.jpg">
-                    </div>
-                    <div class="text-right">
-                        <p id="bio">This is our story our story our story our story</p>
-                        <p id="bio">This is our story our story our story our story</p>
-                        <p id="bio">This is our story our story our story our story</p>
-                        <p id="bio">This is our story our story our story our story</p>
-                        <p id="bio">This is our story our story our story our story</p>
-                        <p id="bio">This is our story our story our story our story</p>
-                    </div>
-                </div>
-            </section> -->
-            <!-- my problem-> each div inside meet the pack section is a full page, but meet pack section is one page-> stretches 
-            into next section -->
             <section id="meet-the-pack">
-                    <div class="meet-the-pack">
-                        <div class="dog-pack-page">
-                            <div class="pack-content">
-                                <div class="dog-pic-container">
-                                        <img class="dog-pic" id="mandi-puppy" src="meet_the_pack_pics/Mandi_puppy.JPG">
-                                        <img class="dog-pic" src="meet_the_pack_pics/Mandi_adult.JPG">
-                                </div>
-                                <div class="text-middle">
-                                    <div class="text-inner">
-                                        <h1>Golden Summer Mandolin (aka Mandi)</h1>
-                                        <p>Mandi! This one is such an exceptional mamma. 
-                                        She cares so much for her little babies, both biological and adopted. Her favorite thing is 
-                                        definitely to chase birds out from bushes or trees and watch the chickens. Her athleticism
-                                         definitely shines through while she does these activities. Also she's quite the flashy golden 
-                                         who is also quite picky with what she chooses to eat. We love our beautiful Mandi!</p>
-                                        <!-- <p>This is our first dog. This is our first dog</p>
-                                        <p>This is our first dog. This is our first dog</p>
-                                        <p>This is our first dog. This is our first dog</p>
-                                        <p>This is our first dog. This is our first dog</p>
-                                        <p>This is our first dog. This is our first dog</p> -->
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="meet-the-pack">
                         <div class="dog-pack-page">
                             <div class="pack-content">
@@ -159,25 +122,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="full-screen">
-                        <h1>Retired Dogs</h1>
-                        <div class="retired-dog-wrapper">
-                        <div class="retired-dogs-container">
-                            <div class="picture-row">
-                                    <img class="retired-dog" id="banja" src="past_litters_pics/Retired_dogs/banja_2015.JPG">
-                                    <h1 class="retired-dogs-text">Banja</h1>
-                                    <img class="retired-dog" id="levi" src="past_litters_pics/Retired_dogs/levi_2017.JPG">
-                                    <h1 class="retired-dogs-text">Levi</h1>
-                            </div>
-                            <div class="picture-row">
-                                <img class="retired-dog" id="mandi" src="past_litters_pics/Retired_dogs/Mandi_adult.jpg">
-                                <h1 class="retired-dogs-text">Mandi</h1>
-                                <img class="retired-dog" id="uke" src="past_litters_pics/Retired_dogs/uke_2018.JPG">
-                                <h1 class="retired-dogs-text">Uke</h1>
-                            </div>
-                        </div>
-                        </div>
-                    </div> -->
             </section>
 
             <section id="retired-dogs">
@@ -219,11 +163,8 @@
                                     <img class="litter-pic" id="sleepy-puppy" src="past_litters_pics/Levi_litters-20231/Uke_Levi_litters/sleepy_puppy.jpg">
                                 </div>
                         </div> 
-                        <!-- <div style="border: 3px solid black">Div</div> -->
                 </div>
                 </div>
-            <!-- </section> -->
-            <!-- <section id="past-litters"> -->
                 <div class="full-screen">
                 <div class="past-litters-container">
                         <div class="past-litters-left-pic">
@@ -238,11 +179,8 @@
                                     <img class="litter-pic" id="two-pups-grass" src="past_litters_pics/Levi_litter-20232/Mandi-Levi litter/two_pups_grass.JPG">
                                 </div>
                         </div> 
-                        <!-- <div style="border: 3px solid black">Div</div> -->
                 </div>
                 </div>
-            <!-- </section> -->
-            <!-- <section id="past-litters"> -->
                 <div class="full-screen">
                 <div class="past-litters-container">
                         <div class="past-litters-left-pic">
@@ -251,17 +189,14 @@
                         </div>
                         <div class="stacked-pics">
                                 <div class="past-litters-right-pic">
-                                    <img class="litter-pic" id="mom-and-pup" src="past_litters_pics/Remy_litter-20231/Xyla-Remy litter/pup_and_pumpkin.jpg">
+                                    <img class="litter-pic" id="pup-and-pumpkin" src="past_litters_pics/Remy_litter-20231/Xyla-Remy litter/pup_and_pumpkin.jpg">
                                 </div>
                                 <div class="past-litters-right-pic">
                                     <img class="litter-pic" id="two-pups-grass" src="past_litters_pics/Remy_litter-20231/Xyla-Remy litter/puppys_with_mom.jpg">
                                 </div>
                         </div> 
-                        <!-- <div style="border: 3px solid black">Div</div> -->
                 </div>
                 </div>
-            <!-- </section> -->
-            <!-- <section id="past-litters"> -->
                 <div class="full-screen">
                 <div class="past-litters-container">
                         <div class="past-litters-left-pic">
@@ -276,28 +211,10 @@
                                     <img class="litter-pic" id="two-pups-grass" src="past_litters_pics/Remy_litter-20232/Mandi-Remy litter/pup_on_stair.jpg">
                                 </div>
                         </div> 
-                        <!-- <div style="border: 3px solid black">Div</div> -->
                 </div>
                 </div>
-                <!-- <div class="full-screen">
-                    <div class="past-litters-container">
-                            <div class="past-litters-left-pic">
-                                    <img class="litter-pic" id="puppy-with-horse" src="past_litters_pics/Remy_litter-20232/Mandi-Remy litter/running_at_camera.jpg">
-                                    <h1 class="past-litters-text">Retired Dogs</h1>
-                            </div>
-                            <div class="stacked-pics">
-                                    <div class="past-litters-right-pic">
-                                        <img class="litter-pic" id="meg-and-pup" src="past_litters_pics/Remy_litter-20232/Mandi-Remy litter/meg_holding_pup.jpg">
-                                    </div>
-                                    <div class="past-litters-right-pic">
-                                        <img class="litter-pic" id="two-pups-grass" src="past_litters_pics/Remy_litter-20232/Mandi-Remy litter/pup_on_stair.jpg">
-                                    </div>
-                            </div> 
-                    </div>
-                    </div> -->
             </section>
                    
-            <!-- extra margin is coming from contact section -->
             <section id="contact">
                 <div class="container">
                     <div class="contact-page-container">
@@ -305,7 +222,7 @@
                             <img id="family-pic" src="family-pic/family.jpg">
                         </div>
                         <div class="text-right">
-                            <div class="text-inner contact-text">
+                            <div class= "contact-text">
                                 <h1>About Us</h1>
                                 <p>Let us introduce ourselves! My name is Megyn and my
                                 moms name is Kayla and Goldensonthefarm is primarily run by us.

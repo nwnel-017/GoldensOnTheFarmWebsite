@@ -11,8 +11,6 @@ for(var i = 0; i< tabs.length; i++) {
 }
 
 const sections = document.querySelectorAll('section[id]')
-//something going wrong-> tab loses active class after scrolling past page. we are still adding and removing active class 
-//in meet the pack section 
 window.addEventListener('scroll', () => {
     const scrollY = window.pageYOffset;
     console.log(scrollY);
@@ -20,17 +18,10 @@ window.addEventListener('scroll', () => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 200;
         const sectionId = current.getAttribute('id');
-        // console.log(sectionId);
         if(scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
             document.querySelector('a[href*="' + sectionId + '"]').classList.add('active-tab');
-            // console.log("adding active class"); //still adding active class in meet the pack section
-            //js knows we're in the right section
-            // console.log("section height: " + sectionHeight);
-            // console.log("Section top: " + sectionTop);
-            // console.log("window.pageOffset: " + scrollY);
         } else {
-            document.querySelector('a[href*="' + sectionId + '"]').classList.remove('active-tab'); //were removing the active class every time
-            // console.log("removing active class");
+            document.querySelector('a[href*="' + sectionId + '"]').classList.remove('active-tab'); 
         }
         if(current.classList.contains('active')) {
             console.log(current.classList);
